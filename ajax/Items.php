@@ -5,7 +5,7 @@
      error_reporting(0);
      mysqli_report(MYSQLI_REPORT_OFF);
   
-     $config =  parse_ini_file("..".DIRECTORY_SEPARATOR."config".DIRECTORY_SEPARATOR."database.ini");
+     $config =  parse_ini_file("..".DIRECTORY_SEPARATOR."config".DIRECTORY_SEPARATOR."app.ini");
 
      $db = new \App\Db($config['server'],$config['user'],$config['pwd'],$config['db']);
      
